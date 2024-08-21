@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ children }) => {
         }}
         className="h-[1px] absolute top-0 left-0 right-0"
       />
-      {children}
+      <div className="relative z-10">{children}</div>
     </div>
   );
 };
