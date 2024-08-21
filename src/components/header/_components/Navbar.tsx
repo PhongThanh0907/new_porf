@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { useCallback, useState } from "react";
 
 const Navbar = () => {
+  const t = useTranslations();
   const [isHoveredItem, setIsHoveredItem] = useState<number | null>(null);
   const [opacity, setOpacity] = useState(false);
 
@@ -17,10 +19,16 @@ const Navbar = () => {
     setOpacity(false);
   }, []);
 
-  const items = ["About", "Experience", "Skills", "Project", "Contact"];
+  const items = [
+    t("About"),
+    t("Experience"),
+    t("Skills"),
+    t("Project"),
+    t("Contact"),
+  ];
 
   return (
-    <div className="w-[570px] relative h-[48px] flex-center-row border border-[#222222] rounded-[10px]">
+    <div className="w-[570px] relative h-[48px] flex-center-row border border-[#222222] rounded-[10px] bg-[#0f0f0f]">
       <div className="relative w-[560px] h-[46px]">
         <motion.div
           style={{
@@ -39,11 +47,11 @@ const Navbar = () => {
             duration: 0.3,
             ease: "linear",
           }}
-          className={`absolute w-28 h-9 rounded-md  border border-transparent z-[-1] ${opacity ? "opacity-100" : "opacity-0"}`}
+          className={`absolute w-28 h-9 rounded-md border border-transparent ${opacity ? "opacity-100" : "opacity-0"}`}
         />
         <ul
           onMouseLeave={handleMouseLeave}
-          className="flex h-full w-full items-center justify-center"
+          className="flex h-full w-full items-center justify-center relative z-10"
         >
           {items.map((item, index) => (
             <li

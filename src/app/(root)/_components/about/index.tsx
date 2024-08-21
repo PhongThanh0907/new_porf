@@ -7,10 +7,10 @@ const About = () => {
   const t = useTranslations();
 
   return (
-    <section className="text-center h-screen w-screen flex-center-row">
+    <section className="text-center h-screen w-screen flex-center-row overflow-hidden">
       <div className="relative z-10">
         <TypeWrite />
-        <p className="text-lg uppercase text-gray-400 tracking-[6px]">
+        <p className="text-lg uppercase text-white tracking-[6px]">
           {t("job-name")}
         </p>
       </div>

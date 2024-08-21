@@ -6,6 +6,7 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   background: #0a0a0a;
+  color: #9c9c9c;
 }
 
 @layer components {
@@ -29,5 +30,63 @@ body {
     background: linear-gradient(90deg, var(--token-e312cf2d-478c-4df0-9124-23464ed48b15, rgb(255, 255, 255)) 0%, var(--token-c9d7fe05-7134-4c81-9c0d-206984b9774e, rgb(112, 190, 250)) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .text-bg {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgb(112, 190, 250) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+
+  .text-light-blue {
+    animation: textLightBlue 5s linear infinite;
+  }
+  
+  .item-card {
+    background: radial-gradient(50% 25% at 50% 0%, rgba(80, 176, 250, .1) 0%, rgba(64, 140, 199, .05) 36.486486486486484%, #0d0d0d 100%);
+    padding: 40px 0 0;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .item-card::after {
+    content: "";
+    border-width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: #222222;
+    border-radius: inherit;
+  }
+}
+
+@keyframes textLightBlue {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #2d2d2e;
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #70befa, 0 0 20px #70befa, 0 0 40px #70befa, 0px 0 60px #70befa,
+      0 0 100px #70befa;
   }
 }
