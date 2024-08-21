@@ -12,7 +12,7 @@ const Overview = () => {
         <Card>
           <div className="px-10 pb-10">
             <h1 className="text-[50px] text-light-blue text-center">
-              Overview
+              {t("Overview")}
             </h1>
             <p className="tracking-widest leading-[150%] pt-6">
               {t("text-overview")}
@@ -39,7 +39,7 @@ const Overview = () => {
           <Card>
             <div className="h-36 overflow-hidden relative">
               <p className="text-white text-xl text-center">
-                I prioritize client collaboration, fostering open communication
+                {t("communication")}
               </p>
               <GridGlobe />
             </div>
@@ -56,8 +56,6 @@ const Overview = () => {
               />
             </div>
           </Card>
-          {/* <div className="flex-1">
-          </div> */}
         </div>
       </div>
     </section>

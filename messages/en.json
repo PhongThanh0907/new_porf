@@ -13,5 +13,20 @@
   "short-term": "Short-term Goal",
   "text-short-term": "Improving as well as learning many skills at programming. Become Fullstack Developer as soon as possible.",
   "long-term": "Long-term Goal",
-  "text-long-term": "Become a Project Manager with professional skills."
+  "text-long-term": "Become a Project Manager with professional skills.",
+  "communication": "I prioritize client collaboration, fostering open communication",
+  "Overview": "Overview",
+  "work-experience": "Work Experience",
+  "June 2022 - August 2023": "June 2022 - August 2023",
+  "August 2023 - Present": "August 2023 - Present",
+  "point-01": "Developing and maintaining web applications using React.js, Typescript and other related technologies.",
+  "point-02": "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  "point-03": "Implementing responsive design and ensuring cross-browser compatibility.",
+  "point-04": "Optimizing web applications for maximum speed and scalability.",
+  "point-05": "Participating in code reviews and providing constructive feedback to other developers.",
+  "point-11": "Developing and maintaining web applications using React.js, Typescript and other related technologies.",
+  "point-12": "Collaboration is key in your role as you work closely with back-end developers to integrate front-end components with server-side logic. Your input is valuable during the planning and decision-making stages, where you provide insights into feasibility, scalability, and best practices for front-end development.",
+  "point-13": "Implementing responsive design and ensuring cross-browser compatibility.",
+  "point-14": "Optimizing web applications for maximum speed and scalability.",
+  "point-15": "Participating in code reviews and providing constructive feedback to other developers."
 }
