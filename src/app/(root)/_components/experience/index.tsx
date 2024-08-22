@@ -55,7 +55,11 @@ const Experience = () => {
   ];
 
   return (
-    <section ref={targetRef} className="h-[2200px] relative hidden lg:block">
+    <section
+      id="experience"
+      ref={targetRef}
+      className="h-[2200px] relative hidden lg:block"
+    >
       <div className="h-screen sticky top-0 overflow-hidden">
         <p className="text-[50px] text-light-blue text-center relative top-20">
           {t("work-experience")}

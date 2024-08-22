@@ -10,7 +10,7 @@ const Background = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsClient(true);
-    }, 500);
+    }, 800);
 
     return () => clearTimeout(timer);
   }, []);

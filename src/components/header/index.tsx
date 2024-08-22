@@ -1,33 +1,43 @@
-import React from "react";
-import Navbar from "./_components/Navbar";
-import Language from "./_components/Language";
-import Image from "next/image";
-import Button from "../Button";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import NavbarV2 from "./_components/NavbarV2";
 
 const Index = () => {
   const t = useTranslations();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 300 && currentScrollY > lastScrollY) {
+        setIsScrolled(true);
+      } else if (currentScrollY < lastScrollY) {
+        setIsScrolled(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <div className="flex-between w-screen h-24 fixed top-0 inset-x-0 z-10">
-      <div className="flex">
-        <div className="flex items-center gap-2">
-          <Image src="/logo.webp" alt="logo" height={36} width={36} />
-          <span className="text-color text-2xl">Portfolio</span>
-        </div>
-      </div>
-
-      <Navbar />
-
-      <div className="flex gap-2 relative">
-        <div className="absolute -left-[90%] top-0">
-          <Language />
-        </div>
-        <Button className="w-32">
-          <span className="text-color">{t("get-cv")}</span>
-        </Button>
-      </div>
-    </div>
+    <motion.div
+      animate={{ top: isScrolled ? 10 : -100 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="flex-center-row h-24 fixed top-0 inset-x-0 z-50"
+    >
+      <NavbarV2 />
+    </motion.div>
   );
 };
 

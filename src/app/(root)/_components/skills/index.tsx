@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import BallCanvas from "@/components/canvas/Ball";
@@ -9,7 +9,6 @@ import ANTD from "../../../../../public/technologies/antd.png";
 import GIT from "../../../../../public/technologies/git.png";
 import JAVASCRIPT from "../../../../../public/technologies/javascript.png";
 import MONGO from "../../../../../public/technologies/mongodb.png";
-import NEXT from "../../../../../public/technologies/nextjs.png";
 import NODE from "../../../../..//public/technologies/nodejs.png";
 import REACT from "../../../../../public/technologies/reactjs.png";
 import REDUX from "../../../../../public/technologies/redux.png";
@@ -24,11 +23,25 @@ import Mysql from "../../../../../public/technologies/mysql.png";
 import Image from "next/image";
 
 const Skills = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsClient(true);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
   const getRandomY = () => {
     return Math.floor(Math.random() * 100) - 30;
   };
   const TECHNOLOGIES = [
-    { name: "NextJS", icon: <Image src={NEXT} alt="icon" /> },
+    { name: "NextJS", icon: <Image src={Nextjs} alt="icon" /> },
     { name: "Typescript", icon: <Image src={TYPESCRIPT} alt="icon" /> },
     { name: "Javascript", icon: <Image src={JAVASCRIPT} alt="icon" /> },
     { name: "React", icon: <Image src={REACT} alt="icon" /> },
@@ -47,7 +60,7 @@ const Skills = () => {
 
   return (
     <div
-      id="technologies"
+      id="skills"
       className="grid grid-cols-3 py-32 lg:flex lg:flex-row lg:flex-wrap justify-center gap-x-4 gap-y-8 lg:gap-x-10 lg:gap-y-10 max-w-7xl mx-auto "
     >
       {TECHNOLOGIES.map((technology, index) => (

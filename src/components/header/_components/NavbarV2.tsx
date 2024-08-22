@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useCallback, useState } from "react";
 
-const Navbar = () => {
+const NavbarV2 = () => {
   const t = useTranslations();
   const [isHoveredItem, setIsHoveredItem] = useState<number | null>(null);
   const [opacity, setOpacity] = useState(false);
@@ -41,11 +41,15 @@ const Navbar = () => {
       title: t("Contact"),
       link: "#contact",
     },
+    {
+      title: t("Get CV"),
+      link: "https://drive.google.com/file/d/1RWmeKjTIVVdzBSrHd9E07CXxLfCwOroy/view?usp=sharing",
+    },
   ];
 
   return (
-    <div className="w-[570px] relative h-[48px] flex-center-row border border-[#222222] rounded-[10px] bg-[#0f0f0f]">
-      <div className="relative w-[560px] h-[46px]">
+    <div className="w-[682px] relative h-[48px] flex-center-row border border-[#222222] rounded-[10px] bg-[#0f0f0f]">
+      <div className="relative w-[672px] h-[46px]">
         <motion.div
           style={{
             boxShadow: "0px 0px 2px 0.5px #70befabf",
@@ -89,4 +93,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarV2;

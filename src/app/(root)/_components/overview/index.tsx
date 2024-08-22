@@ -7,7 +7,7 @@ import React from "react";
 const Overview = () => {
   const t = useTranslations();
   return (
-    <section className="h-screen w-screen relative flex-center-row">
+    <section id="about" className="h-screen w-screen relative flex-center-row">
       <div className="grid grid-cols-2 gap-10 pt-10">
         <Card>
           <div className="px-10 pb-10">

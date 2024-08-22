@@ -355,7 +355,11 @@ const Projects = () => {
   const scale5 = useTransform(scrollYProgress, [0.73, 1], [0.5, 1]);
 
   return (
-    <section ref={targetRef} className="h-[2200px] relative hidden lg:block">
+    <section
+      id="project"
+      ref={targetRef}
+      className="h-[2200px] relative hidden lg:block"
+    >
       <div className="h-screen sticky top-0 overflow-hidden">
         <div
           className="absolute w-36 inset-y-0 left-0 z-20"
