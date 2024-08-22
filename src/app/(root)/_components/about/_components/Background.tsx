@@ -1,10 +1,24 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Background = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsClient(true);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
+
   return (
     <div className="absolute inset-0 z-0">
       <div className="h-full w-full relative flex items-center">

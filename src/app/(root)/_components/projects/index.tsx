@@ -25,14 +25,10 @@ import Image, { StaticImageData } from "next/image";
 import TextTruncate from "@/components/TextTruncate";
 
 const ItemProject = ({
-  index,
   title,
   description,
   tags,
   img,
-  team,
-  technology,
-  role,
 }: {
   index: number;
   title: string;
@@ -98,9 +94,7 @@ const ItemProject = ({
 
         <div className="mt-24">
           <h3 className="text-white font-bold text-[24px]">{title}</h3>
-          <p className="mt-2 text-gray-400 text-[14px]">
-            <TextTruncate text={description} />
-          </p>
+          <TextTruncate text={description} />
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2 absolute bottom-5">
