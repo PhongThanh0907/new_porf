@@ -48,7 +48,7 @@ const Skills = () => {
   return (
     <div
       id="technologies"
-      className="grid grid-cols-3 py-64 lg:flex lg:flex-row lg:flex-wrap justify-center gap-x-4 gap-y-8 lg:gap-x-10 lg:gap-y-10 max-w-7xl mx-auto "
+      className="grid grid-cols-3 py-32 lg:flex lg:flex-row lg:flex-wrap justify-center gap-x-4 gap-y-8 lg:gap-x-10 lg:gap-y-10 max-w-7xl mx-auto "
     >
       {TECHNOLOGIES.map((technology, index) => (
         <motion.div
