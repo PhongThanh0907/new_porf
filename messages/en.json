@@ -49,5 +49,6 @@
   "des-project-04": "This is a website used to create company strategies for each stage.",
   "role-project-04": "This is administration website of BSC Company. This website features functions such as creating company strategies, generating KPIs for each department and individual, and assigning specific tasks to each department, individual and more.",
   "des-project-05": "A Customer Data Platform (CDP) is a software system designed to consolidate and manage customer data from various sources. Its primary purpose is to organize customer data in a structured and unified manner to provide detailed and comprehensive insights into customer behavior and preferences for marketing, sales, and service strategies.",
-  "role-project-05": "This is the human resource management website of Hasaki Company. The website offers a wide range of functionalities such as customer CRUD (Create, Read, Update, Delete), rule segment, among others."
+  "role-project-05": "This is the human resource management website of Hasaki Company. The website offers a wide range of functionalities such as customer CRUD (Create, Read, Update, Delete), rule segment, among others.",
+  "Get CV": "Get CV"
 }

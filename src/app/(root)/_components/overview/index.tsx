@@ -7,11 +7,14 @@ import React from "react";
 const Overview = () => {
   const t = useTranslations();
   return (
-    <section id="about" className="h-screen w-screen relative flex-center-row">
-      <div className="grid grid-cols-2 gap-10 pt-10">
+    <section
+      id="about"
+      className="h-full lg:h-screen w-screen relative flex lg:flex-row flex-col items-center px-4 lg:px-0"
+    >
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-10 pt-10">
         <Card>
-          <div className="px-10 pb-10">
-            <h1 className="text-[50px] text-light-blue text-center">
+          <div className="px-6 lg:px-10 pb-10">
+            <h1 className="text-[40px] lg:text-[50px] text-light-blue text-center">
               {t("Overview")}
             </h1>
             <p className="tracking-widest leading-[150%] pt-6">
@@ -37,7 +40,7 @@ const Overview = () => {
 
         <div className="flex flex-col gap-6">
           <Card>
-            <div className="h-36 overflow-hidden relative">
+            <div className="h-44 lg:h-36 overflow-hidden relative">
               <p className="text-white text-xl text-center">
                 {t("communication")}
               </p>
@@ -46,7 +49,7 @@ const Overview = () => {
           </Card>
 
           <Card>
-            <div className="hero-img w-[540px] h-56 mb-10 mx-10 overflow-hidden rounded-lg">
+            <div className="hero-img w-[90%] lg:w-[540px] h-56 mb-10 mx-auto lg:mx-10 overflow-hidden rounded-lg">
               <Image
                 src="/hero-bg.jpg"
                 alt="hero"

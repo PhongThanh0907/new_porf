@@ -49,5 +49,6 @@
   "des-project-04": "Đây là trang web được sử dụng để tạo ra chiến lược của công ty cho từng giai đoạn.",
   "role-project-04": "Đây là trang web quản trị của Công ty BSC. Trang web này có các chức năng như tạo chiến lược công ty, tạo KPI cho từng bộ phận và cá nhân, và giao nhiệm vụ cụ thể cho từng bộ phận, cá nhân và nhiều hơn nữa.",
   "des-project-05": "Nền tảng Dữ liệu Khách hàng (CDP) là một hệ thống phần mềm được thiết kế để tổng hợp và quản lý dữ liệu khách hàng từ nhiều nguồn khác nhau. Mục đích chính của nó là tổ chức dữ liệu khách hàng một cách cấu trúc và thống nhất để cung cấp cái nhìn chi tiết và toàn diện về hành vi và sở thích của khách hàng để cung cấp thông tin chi tiết và toàn diện về hành vi và sở thích của khách hàng cho các chiến lược tiếp thị, bán hàng và dịch vụ.",
-  "role-project-05": "Đây là trang web quản lý nhân sự của Công ty Hasaki. Trang web cung cấp một loạt các chức năng như CRUD khách hàng (Tạo, Đọc, Cập nhật, Xóa), quy tắc phân đoạn, và nhiều chức năng khác."
+  "role-project-05": "Đây là trang web quản lý nhân sự của Công ty Hasaki. Trang web cung cấp một loạt các chức năng như CRUD khách hàng (Tạo, Đọc, Cập nhật, Xóa), quy tắc phân đoạn, và nhiều chức năng khác.",
+  "Get CV": "Tải CV"
 }

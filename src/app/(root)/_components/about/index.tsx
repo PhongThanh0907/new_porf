@@ -12,7 +12,7 @@ const About = () => {
   const t = useTranslations();
 
   return (
-    <section className="text-center h-screen w-screen flex-center-row overflow-hidden">
+    <section className="text-center h-screen w-screen flex-center-row overflow-hidden hidden lg:flex">
       <div className="flex-between w-screen h-24 absolute top-0 inset-x-0 z-10">
         <div className="flex">
           <div className="flex items-center gap-2">

@@ -160,7 +160,7 @@ const Contact = () => {
         }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="flex relative col-span-6"
+        className="flex relative col-span-6 pt-10 lg:pt-0"
       >
         <Canvas className="">
           <Suspense fallback={null}>
@@ -192,7 +192,7 @@ const Contact = () => {
         }}
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className=" bg-black-100 p-8 rounded-2xl col-span-4 lg:hidden"
+        className=" bg-black-100 p-8 rounded-2xl col-span-4 lg:hidden pt-60"
       >
         <p className="text-gray-400 text-lg m-auto">Get in touch</p>
         <h3 className="text-4xl font-bold uppercase tracking-widest my-4">
