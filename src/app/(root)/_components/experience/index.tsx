@@ -13,13 +13,13 @@ const Experience = () => {
   const targetRef = useRef(null);
 
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const xContent1 = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"]);
+  const xContent1 = useTransform(scrollYProgress, [0, 1], ["-50%", "-160%"]);
   const rotateX1 = useTransform(scrollYProgress, [0, 1], ["0deg", "-20deg"]);
   const rotateY1 = useTransform(scrollYProgress, [0, 1], ["0deg", "60deg"]);
   const opacity1 = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const scale1 = useTransform(scrollYProgress, [0, 1], [1, 0.5]);
 
-  const xContent2 = useTransform(scrollYProgress, [0, 1], ["40%", "-100%"]);
+  const xContent2 = useTransform(scrollYProgress, [0, 1], ["-20%", "-150%"]);
   const rotateX2 = useTransform(scrollYProgress, [0, 1], ["20deg", "0deg"]);
   const rotateY2 = useTransform(scrollYProgress, [0, 1], ["40deg", "0deg"]);
   const opacity2 = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -74,7 +74,7 @@ const Experience = () => {
               scale: scale1,
               perspective: "1000px",
             }}
-            className="flex flex-col gap-8 relative left-[25%] transform -translate-x-1/2 top-24"
+            className="flex flex-col gap-8 relative left-[50%] transform -translate-x-1/2 top-24"
           >
             {EXPERIMENTS.slice(0, 1).map((exp, index) => (
               <div key={index} className="w-[700px]">
@@ -158,7 +158,7 @@ const Experience = () => {
               scale: scale2,
               perspective: "1000px",
             }}
-            className="flex flex-col gap-8 relative left-[25%] transform -translate-x-1/2 top-24"
+            className="flex flex-col gap-8 relative left-[50%] transform -translate-x-1/2 top-24"
           >
             {EXPERIMENTS.slice(1, 2).map((exp, index) => (
               <div key={index} className="w-[700px]">

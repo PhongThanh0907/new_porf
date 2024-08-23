@@ -34,7 +34,7 @@ const Index = () => {
     <motion.div
       animate={{ top: isScrolled ? 10 : -100 }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="flex-center-row h-24 fixed top-0 inset-x-0 z-50"
+      className="flex-center-row h-24 fixed -top-20 inset-x-0 z-50"
     >
       <NavbarV2 />
     </motion.div>

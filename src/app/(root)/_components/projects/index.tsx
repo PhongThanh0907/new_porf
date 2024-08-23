@@ -324,35 +324,27 @@ const Projects = () => {
   ];
 
   const opacity1 = useTransform(scrollYProgress, [0, 0.4], [1, 0.3]);
-  const scale1 = useTransform(scrollYProgress, [0, 0.25], [1, 0.5]);
+  const scale1 = useTransform(scrollYProgress, [0, 0.28], [1, 0.5]);
 
-  const opacity2 = useTransform(
-    scrollYProgress,
-    [0, 0.245, 0.65],
-    [0.3, 1, 0.3]
-  );
-  const scale2 = useTransform(scrollYProgress, [0, 0.245, 0.5], [0.5, 1, 0.5]);
+  const opacity2 = useTransform(scrollYProgress, [0, 0.25, 0.5], [0.3, 1, 0.3]);
+  const scale2 = useTransform(scrollYProgress, [0, 0.25, 0.5], [0.5, 1, 0.5]);
 
   const opacity3 = useTransform(
     scrollYProgress,
-    [0.13, 0.49, 0.9],
+    [0.25, 0.5, 0.75],
     [0.3, 1, 0.3]
   );
   const scale3 = useTransform(
     scrollYProgress,
-    [0.25, 0.49, 0.75],
+    [0.25, 0.5, 0.75],
     [0.5, 1, 0.5]
   );
 
-  const opacity4 = useTransform(
-    scrollYProgress,
-    [0.38, 0.74, 1],
-    [0.3, 1, 0.3]
-  );
-  const scale4 = useTransform(scrollYProgress, [0.47, 0.74, 1], [0.5, 1, 0.5]);
+  const opacity4 = useTransform(scrollYProgress, [0.5, 0.75, 1], [0.3, 1, 0.3]);
+  const scale4 = useTransform(scrollYProgress, [0.5, 0.75, 1], [0.5, 1, 0.5]);
 
-  const opacity5 = useTransform(scrollYProgress, [0.73, 1], [0.3, 1]);
-  const scale5 = useTransform(scrollYProgress, [0.73, 1], [0.5, 1]);
+  const opacity5 = useTransform(scrollYProgress, [0.75, 1], [0.3, 1]);
+  const scale5 = useTransform(scrollYProgress, [0.75, 1], [0.5, 1]);
 
   return (
     <section
@@ -384,9 +376,9 @@ const Projects = () => {
         </p>
 
         <motion.div
-          className="absolute top-[32%] left-[38%] transform -translate-x-1/2 z-10 flex gap-20"
+          className="absolute top-[32%] left-[50%] transform -translate-x-1/2 z-10 flex gap-20"
           style={{
-            x: useTransform(scrollYProgress, [0, 1], [`0%`, `-83%`]),
+            x: useTransform(scrollYProgress, [0, 1], [`-8.5%`, `-91%`]),
           }}
         >
           {projects.map((project, index) => (
