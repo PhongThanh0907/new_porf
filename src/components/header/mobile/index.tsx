@@ -70,7 +70,7 @@ const MobileHeader = () => {
     <motion.div
       animate={{ top: isScrolled ? 10 : -100 }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="flex-center-row h-24 fixed top-0 inset-x-0 z-40"
+      className="flex-center-row h-24 fixed top-0 inset-x-0 z-40 lg:hidden"
     >
       <div className="flex-between w-screen h-24 px-4">
         <div className="flex">

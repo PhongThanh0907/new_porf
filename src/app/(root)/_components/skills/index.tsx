@@ -28,7 +28,7 @@ const Skills = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsClient(true);
-    }, 100);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

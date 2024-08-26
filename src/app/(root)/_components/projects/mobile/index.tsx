@@ -318,7 +318,7 @@ const MobileProjects = () => {
     },
   ];
   return (
-    <div className="px-4 space-y-6">
+    <div className="px-4 space-y-6 lg:hidden">
       {projects.map((project, index) => (
         <div key={`project-${index}`}>
           <Tilt

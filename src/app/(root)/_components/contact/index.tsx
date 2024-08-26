@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, Suspense, FormEvent } from "react";
+import React, { useRef, useState, Suspense, FormEvent, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
@@ -18,6 +18,19 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsClient(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isClient) {
+    return null;
+  }
 
   const handleChange = (
     e:

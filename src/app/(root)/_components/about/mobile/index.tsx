@@ -6,7 +6,7 @@ import Background from "./_components/Background";
 const AboutMobile = () => {
   const t = useTranslations();
   return (
-    <section className="h-screen w-screen overflow-hidden">
+    <section className="h-screen w-screen overflow-hidden lg:hidden">
       <div className="h-full w-full flex-center-row relative -top-6">
         <div className="relative z-10 text-center">
           <TypeWrite />
