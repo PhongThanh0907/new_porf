@@ -9,12 +9,14 @@ import AboutMobile from "./_components/about/mobile";
 import MobileHeader from "@/components/header/mobile";
 import MobileExperience from "./_components/experience/mobile";
 import MobileProjects from "./_components/projects/mobile";
+import Content from "./_components/content";
 
 export default function Home() {
   return (
     <main className="">
       <Header />
       <MobileHeader />
+      <Content />
       <About />
       <AboutMobile />
       <Overview />
