@@ -14,9 +14,9 @@ import Content from "./_components/content";
 export default function Home() {
   return (
     <main className="">
+      <Content />
       <Header />
       <MobileHeader />
-      <Content />
       <About />
       <AboutMobile />
       <Overview />
