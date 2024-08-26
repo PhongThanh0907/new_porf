@@ -23,7 +23,7 @@ const Contact = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsClient(true);
-    }, 1000);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);

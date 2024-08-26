@@ -20,7 +20,7 @@ const Background = () => {
   }
 
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 z-0 lg:hidden">
       <div className="h-full w-full relative flex items-center flex-col">
         <div
           className="absolute inset-x-0 -inset-y-4 z-10"
