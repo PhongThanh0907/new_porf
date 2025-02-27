@@ -1,8 +1,15 @@
+"use client";
+
 import Card from "@/components/Card";
-import GridGlobe from "@/components/GridGlobe";
+import dynamic from "next/dynamic";
+// import GridGlobe from "@/components/GridGlobe";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
+
+const GridGlobe = dynamic(() => import("@/components/GridGlobe"), {
+  ssr: false,
+});
 
 const Overview = () => {
   const t = useTranslations();

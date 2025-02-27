@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import BallCanvas from "@/components/canvas/Ball";
+// import BallCanvas from "@/components/canvas/Ball";
 import Nextjs from "../../../../../public/technologies/nextjs.png";
 import ANTD from "../../../../../public/technologies/antd.png";
 import GIT from "../../../../../public/technologies/git.png";
@@ -21,6 +21,11 @@ import Nest from "../../../../../public/technologies/nestjs.png";
 import Mysql from "../../../../../public/technologies/mysql.png";
 
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const BallCanvas = dynamic(() => import("@/components/canvas/Ball"), {
+  ssr: false,
+});
 
 const Skills = () => {
   const [isClient, setIsClient] = useState(false);
